@@ -1,0 +1,6 @@
+version: "2"
+services:
+  base:
+    build: .
+    container_name: base
+    image: livingstoneonline/base
