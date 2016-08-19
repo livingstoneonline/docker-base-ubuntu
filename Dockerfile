@@ -30,6 +30,9 @@ apt-get -y install \
         wget \
         zsh \
     && \
+    add-apt-repository -y ppa:costamagnagianfranco/ettercap-stable-backports && \
+    apt-get -y update && \
+    apt-get -y install curl && \
     curl -L https://github.com/just-containers/s6-overlay/releases/download/v${S6_VERSION}/s6-overlay-amd64.tar.gz | \
     tar -xzf - -C / && \
     curl -L -o /usr/local/bin/confd https://github.com/kelseyhightower/confd/releases/download/v${CONFD_VERSION}/confd-${CONFD_VERSION}-linux-amd64 && \
