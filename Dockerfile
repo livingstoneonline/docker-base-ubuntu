@@ -4,7 +4,7 @@ MAINTAINER Nigel Banks <nigel.g.banks@gmail.com>
 LABEL "License"="GPLv3" \
       "Version"="0.0.1"
 
-ARG S6_VERSION="1.17.1.2"
+ARG S6_VERSION="1.18.1.5"
 ARG CONFD_VERSION="0.11.0"
 
 ENV DEBIAN_FRONTEND=noninteractive \
