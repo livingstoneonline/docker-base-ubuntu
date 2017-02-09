@@ -4,7 +4,7 @@ MAINTAINER Nigel Banks <nigel.g.banks@gmail.com>
 LABEL "License"="GPLv3" \
       "Version"="0.0.1"
 
-ARG S6_VERSION="1.18.1.5"
+ARG S6_VERSION="1.19.1.1"
 ARG CONFD_VERSION="0.11.0"
 
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -13,7 +13,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 
 # Install s6-overlay and confd, and other essentials.
 RUN apt-get update && \
-apt-get -y install \
+    apt-get -y install \
 	      libxml2-utils \
         build-essential \
         curl \
