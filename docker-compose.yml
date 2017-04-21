@@ -3,4 +3,4 @@ services:
   base:
     build: .
     container_name: base
-    image: livingstoneonline/base
+    image: livingstoneonline/base:xenial
